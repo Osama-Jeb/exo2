@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions"
+@import "../../node_modules/bootstrap/scss/variables"
+
+
+$deep-blue : #00004c
+$bright-blue : #0000ff
+$pink : #EE0979
+$black : #000
+
+$custom-colors : ("deep-blue" : $deep-blue ,"bright-blue" : $bright-blue , "pink" : $pink, "black" : $black)
+
+$theme-colors : map-merge($theme-colors , $custom-colors)

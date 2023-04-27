@@ -1,0 +1,65 @@
+*
+    margin: 0
+    padding: 0
+
+main
+    .banner
+        height: 50vh
+        color: white
+        @media (min-width: 375px) and (max-width: 425px)
+            height: auto
+            padding: 40px
+        div
+            h1
+                letter-spacing: 2px
+                font-size: 65px
+                font-weight: bolder
+                @media (min-width: 375px) and (max-width: 425px)
+                    font-size: 35px
+            button
+                border-radius: 25px
+                padding: 15px 30px
+                letter-spacing: 3px
+    .content
+        margin-top: 9vh
+        height: auto
+        @media (min-width: 375px) and (max-width: 425px)
+            text-align: center
+            padding: 20px
+        .holder
+            margin-top: 5vh
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            @media (min-width: 375px) and (max-width: 425px)
+                flex-direction: column-reverse
+            .content-text
+                width: 25%
+                @media (min-width: 375px) and (max-width: 425px)
+                    width: 100%
+                h1
+                    font-weight: bolder
+                    font-size: 45px
+        .middle
+            margin-top: 5vh
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            @media (min-width: 375px) and (max-width: 425px)
+                flex-direction: column
+            .content-text
+                width: 25%
+                @media (min-width: 375px) and (max-width: 425px)
+                    width: 100%
+                h1
+                    font-weight: bolder
+                    font-size: 45px
+img
+    border-radius: 50%
+
+@media (min-width: 375px) and (max-width: 425px)
+    p
+        font-weight: bold
+    img
+        width: 150px
+        height: 150px
