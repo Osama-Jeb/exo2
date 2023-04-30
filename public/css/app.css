@@ -11111,6 +11111,19 @@ main .banner div button {
   border-radius: 25px;
   padding: 15px 30px;
   letter-spacing: 3px;
+  box-shadow: 0px 0px 20px #EE0979;
+  animation: appear 2s linear infinite alternate;
+}
+@keyframes appear {
+  0% {
+    transform: rotateZ(10deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateX(180deg);
+  }
 }
 main .content {
   margin-top: 9vh;
@@ -11171,8 +11184,17 @@ main .content .middle .content-text h1, main .content .middle .content-text .h1 
 
 img {
   border-radius: 50%;
+  animation: spin 15s infinite linear;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 375px) and (max-width: 425px) {
   p {
     font-weight: bold;
